@@ -47,6 +47,10 @@ class Products {
         cy.visit('https://tremblant-sc10-uat-content.alterramtnco.dev/plan/rentals/UAT6#filters=start-date:2022-8-9')
     }    
 
+    TRActivityNoDate() {
+        cy.visit('https://tremblant-sc10-dev.alterramtnco.dev/plan/products')
+    }
+
     DevTrProductsDetailsDated() {
         cy.visit('https://tremblant-dev.alterramtnco.dev/plan/products/adult-ski-lessons#filters=start-date:2022-8-09')
     }
