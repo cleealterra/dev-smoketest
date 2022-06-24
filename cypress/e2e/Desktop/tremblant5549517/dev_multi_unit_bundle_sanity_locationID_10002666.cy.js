@@ -20,6 +20,8 @@ const oneBedroom = "1 Bedroom"
 const twoBedroom = "2 Bedroom"
 const packageName = 'AP TEAM Test Lodging Supplier'
 
+const baseuUrl = 'https://tremblant-sc10-dev.alterramtnco.dev/plan/hotels-condos/sommet-multi?arrivaldate=08/09/2022&departuredate=08/12/2022&Adult=2&Child=0'
+
 beforeEach(() => {
     
     cy.viewport('macbook-13')
@@ -205,7 +207,7 @@ describe('Multi Unit (with bundle) Lodge Only to mini cart, should be displayed 
             // cy.wait(1500)
 
         //Verify by URL
-        cy.url().should('not.eq', 'https://solitudemountain-dev.alterramtnco.dev/plan-your-trip/lodging/the-inn-at-solitude-single-unit?arrivaldate=04/14/2022&departuredate=04/17/2022&Adult=2&Child=0')
+        cy.url().should('not.eq', baseuUrl)
         cy.url().should('include', 'https://reservations.tremblant.ca/ecomm/Package/PackageBuilder/5549517/en-US')
 
     })
