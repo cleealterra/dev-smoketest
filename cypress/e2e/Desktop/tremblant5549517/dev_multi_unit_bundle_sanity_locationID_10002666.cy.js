@@ -67,6 +67,14 @@ describe('Multi Unit (with bundle) Lodge Only to mini cart, should be displayed 
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()              
+
         // Add to Cart from Bundles
         bundles.AddToCart().click()
         cart.Items({timeout: 10000}).should('be.visible')
@@ -182,6 +190,14 @@ describe('Multi Unit (with bundle) Lodge Only to mini cart, should be displayed 
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()              
+
         // Add to Cart from Bundles
         bundles.AddToCart().click()
             // cy.wait(3000)
@@ -290,6 +306,14 @@ describe('Multi Unit (with bundle) Lodge Only to mini cart, should be displayed 
 
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()          
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()

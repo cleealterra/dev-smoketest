@@ -62,6 +62,14 @@ describe('remove Multi Unit bundles mini cart and cart', () => {
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()       
+
         // Add to Cart from Bundles
         bundles.AddToCart().click()
         cart.Items({timeout: 10000}).should('be.visible')
@@ -99,6 +107,14 @@ describe('remove Multi Unit bundles mini cart and cart', () => {
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                   
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()
@@ -138,6 +154,14 @@ describe('remove Multi Unit bundles mini cart and cart', () => {
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                   
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()
@@ -197,6 +221,14 @@ describe('remove Multi Unit bundles mini cart and cart', () => {
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                   
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()
