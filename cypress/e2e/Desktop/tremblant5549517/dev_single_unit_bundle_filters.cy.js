@@ -96,6 +96,14 @@ describe('Filters+Book Now with Bundles from Widget', () => {
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()               
+
         // Add to Cart from Bundles
         bundles.AddToCart().click()
         cy.get('.cart-item', {timeout: 30000}).should('be.visible')  

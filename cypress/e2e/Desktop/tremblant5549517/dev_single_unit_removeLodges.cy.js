@@ -62,6 +62,14 @@ describe('Single unit and Trash icons', () => {
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()               
+
         // Add to Cart from Bundles
         bundles.AddToCart().click()
             // cy.wait(3500)
@@ -124,6 +132,14 @@ describe('Single unit and Trash icons', () => {
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                       
+
         //Add to Cart from Bundles
         bundles.AddToCart().click()
         cy.get('.cart-item', {timeout: 30000}).should('be.visible')      
@@ -157,7 +173,7 @@ describe('Single unit and Trash icons', () => {
         bundles.BundleOption().contains('Resort Lunch Voucher').click()
 
         // Verify the selected option is found on Review Add-Ons
-        bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
+        bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')     
 
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
@@ -165,7 +181,15 @@ describe('Single unit and Trash icons', () => {
 
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
-            .should('be.visible')
+            .should('be.visible')          
+            
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                       
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()
@@ -241,6 +265,14 @@ describe('Single unit and Trash icons', () => {
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                       
 
         //Add to Cart from Bundles
         bundles.AddToCart().click()
