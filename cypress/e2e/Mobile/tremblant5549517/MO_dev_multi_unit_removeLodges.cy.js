@@ -63,6 +63,14 @@ describe('remove Multi Unit bundles mini cart and cart', () => {
             // Click on 'Next Step'
             bundles.NextStep().eq(0).click()
     
+            //STEP2 added July 5
+
+            // click on No Thanks button
+            bundles.NoThanks().eq(1).click()
+
+            // Click on 'Next Step'
+            bundles.NextStep().eq(1).click()      
+
             // Verify the selected option is found on Review Add-Ons
             bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
                 .should('be.visible')
@@ -109,6 +117,14 @@ describe('remove Multi Unit bundles mini cart and cart', () => {
     
             // Click on 'Next Step'
             bundles.NextStep().eq(0).click()
+
+            //STEP2 added July 5
+
+            // click on No Thanks button
+            bundles.NoThanks().eq(1).click()
+
+            // Click on 'Next Step'
+            bundles.NextStep().eq(1).click()                  
     
             // Verify the selected option is found on Review Add-Ons
             bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
@@ -152,6 +168,14 @@ describe('remove Multi Unit bundles mini cart and cart', () => {
     
             // Click on 'Next Step'
             bundles.NextStep().eq(0).click()
+
+            //STEP2 added July 5
+
+            // click on No Thanks button
+            bundles.NoThanks().eq(1).click()
+
+            // Click on 'Next Step'
+            bundles.NextStep().eq(1).click()                  
     
             // Verify the selected option is found on Review Add-Ons
             bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
@@ -220,6 +244,14 @@ describe('remove Multi Unit bundles mini cart and cart', () => {
 
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()              
 
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')

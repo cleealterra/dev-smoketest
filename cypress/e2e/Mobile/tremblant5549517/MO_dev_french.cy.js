@@ -150,7 +150,7 @@ describe('Single unit lodge with French', () => {
         // filters.NextMonthText().eq(0).should('include.text', NextMonthText)  
         
         // Click on > to go to the next month 
-        filters.NextMonthArrow().eq(0).click()
+        // filters.NextMonthArrow().eq(0).click()
         filters.NextMonthArrow().eq(0).click()
         filters.NextMonthArrow().eq(0).click()         
 
@@ -265,6 +265,14 @@ describe('Single unit lodge with French', () => {
     // Click on 'Next Step'
     bundles.NextStep().eq(0).click()
         // cy.wait(1500)
+
+    //STEP2 added July 5
+
+    // click on No Thanks button
+    bundles.NoThanks().eq(1).click()
+
+    // Click on 'Next Step'
+    bundles.NextStep().eq(1).click()              
 
     // Add to Cart from Bundles
     bundles.AddToCart().click()

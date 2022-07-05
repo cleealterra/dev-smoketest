@@ -67,7 +67,15 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
             // Click on 'Next Step'
             bundles.NextStep().eq(0).click()
                 // cy.wait(1500)
-    
+
+            //STEP2 added July 5
+
+            // click on No Thanks button
+            bundles.NoThanks().eq(1).click()
+
+            // Click on 'Next Step'
+            bundles.NextStep().eq(1).click()                   
+        
             // Verify the selected option is found on Review Add-Ons
             bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
                 .should('be.visible')
@@ -126,6 +134,14 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
             // Click on 'Next Step'
             bundles.NextStep().eq(0).click()
                 // cy.wait(1500)
+
+            //STEP2 added July 5
+
+            // click on No Thanks button
+            bundles.NoThanks().eq(1).click()
+
+            // Click on 'Next Step'
+            bundles.NextStep().eq(1).click()                   
     
             // Verify the selected option is found on Review Add-Ons
             bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
@@ -171,7 +187,7 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
     
             // Click on 'Up' arrow to view 'Review Add-Ons'
             cart.ReviewUp().click()
-                // cy.wait(1500)                  
+                // cy.wait(1500)                          
     
             // Verify the selected option is found on Review Add-Ons
             bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
@@ -181,6 +197,14 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
             // Click on 'Next Step'
             bundles.NextStep().eq(0).click()
                 // cy.wait(1500)
+
+            //STEP2 added July 5
+
+            // click on No Thanks button
+            bundles.NoThanks().eq(1).click()
+
+            // Click on 'Next Step'
+            bundles.NextStep().eq(1).click()                       
     
             // Verify the selected option is found on Review Add-Ons
             bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
@@ -254,8 +278,8 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
     
             // Click on 'Up' arrow to view 'Review Add-Ons'
             cart.ReviewUp().click()
-                // cy.wait(1500)    
-    
+                // cy.wait(1500)                    
+
             // Verify the selected option is found on Review Add-Ons
             bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
 
@@ -264,6 +288,14 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
             // Click on 'Next Step'
             bundles.NextStep().eq(0).click()
                 // cy.wait(1500)
+
+            //STEP2 added July 5
+
+            // click on No Thanks button
+            bundles.NoThanks().eq(1).click()
+
+            // Click on 'Next Step'
+            bundles.NextStep().eq(1).click()                       
     
             // Verify the selected option is found on Review Add-Ons
             bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')

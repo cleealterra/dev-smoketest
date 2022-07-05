@@ -68,9 +68,17 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
         bundles.NextStep().eq(0).click()
             // cy.wait(1500)
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                
+
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
-            .should('be.visible')
+            .should('be.visible')          
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()
@@ -203,6 +211,14 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
         bundles.NextStep().eq(0).click()
             // cy.wait(1500)
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                
+
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
@@ -257,7 +273,7 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
         cy.get('.inntopia-bundles' , {timeout: 60000}).should('be.visible')
 
         // Click on 'Resort Lunch Voucher'
-        bundles.BundleOption().contains('Resort Lunch Voucher').click()
+        bundles.BundleOption().contains('Resort Lunch Voucher').click()  
 
         // Click on 'Up' arrow to view 'Review Add-Ons'
         cart.ReviewUp().click()
@@ -271,6 +287,14 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
             // cy.wait(1500)
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                      
 
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
@@ -307,7 +331,7 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
         cy.get('.inntopia-bundles', {timeout: 10000}).should('be.visible')
 
         // Click on 'Resort Lunch Voucher'
-        bundles.BundleOption().contains('Resort Lunch Voucher').click()
+        bundles.BundleOption().contains('Resort Lunch Voucher').click()       
 
         // Click on 'Up' arrow to view 'Review Add-Ons'
         cart.ReviewUp().click()
@@ -321,6 +345,14 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
             // cy.wait(1500)
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                 
 
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
@@ -383,6 +415,14 @@ describe('Single Unit (with bundle) Lodge Only to mini cart, should be displayed
 
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()             
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()

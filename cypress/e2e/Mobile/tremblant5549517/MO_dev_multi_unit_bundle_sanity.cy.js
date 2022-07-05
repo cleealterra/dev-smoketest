@@ -71,6 +71,14 @@ describe('Multi Unit (with bundle)', () => {
             bundles.NextStep().eq(0).click()
                 // cy.wait(1500)
 
+            //STEP2 added July 5
+
+            // click on No Thanks button
+            bundles.NoThanks().eq(1).click()
+
+            // Click on 'Next Step'
+            bundles.NextStep().eq(1).click()                    
+
             // Verify the selected option is found on Review Add-Ons
             bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
                 .should('be.visible')
@@ -171,6 +179,14 @@ describe('Multi Unit (with bundle)', () => {
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
             // cy.wait(1500)
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                
 
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
@@ -326,6 +342,14 @@ describe('Multi Unit (with bundle)', () => {
 
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()            
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()

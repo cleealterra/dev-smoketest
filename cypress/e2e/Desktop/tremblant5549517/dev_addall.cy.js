@@ -56,6 +56,14 @@ describe('Add Combinations', () => {
         bundles.NextStep().eq(0).click()
             // cy.wait(1500)
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                
+
         // Add to Cart from Bundles
         bundles.AddToCart().click()
         // cart.Items({timeout: 30000}).should('be.visible')  
@@ -99,6 +107,14 @@ describe('Add Combinations', () => {
         // Verify the selected option is found on Review Add-Ons
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                 
 
         //Add to Cart from Bundles
         bundles.AddToCart().click()
@@ -145,6 +161,14 @@ describe('Add Combinations', () => {
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
             // cy.wait(1500)
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()
@@ -199,6 +223,14 @@ describe('Add Combinations', () => {
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                 
+
         // Add to Cart from Bundles
         bundles.AddToCart().click()
         cart.Items({timeout: 10000}).should('be.visible')
@@ -245,6 +277,14 @@ describe('Add Combinations', () => {
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
             cy.wait(1500)
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()     
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()
@@ -299,6 +339,14 @@ describe('Add Combinations', () => {
         bundles.ReviewAddOns().should('include.text', 'Resort Lunch Voucher')
             .should('be.visible')
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()                 
+
         // Add to Cart from Bundles
         bundles.AddToCart().click()
             // cy.wait(3000)
@@ -342,6 +390,14 @@ describe('Add Combinations', () => {
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
             cy.wait(1500)
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()     
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()
@@ -507,6 +563,14 @@ describe('Add Combinations', () => {
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
 
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()     
+
         // Add to Cart from Bundles
         bundles.AddToCart().click()
         // cart.Items({timeout: 30000}).should('be.visible')  
@@ -669,6 +733,14 @@ describe('Add Combinations', () => {
 
         // Click on 'Next Step'
         bundles.NextStep().eq(0).click()
+
+        //STEP2 added July 5
+
+        // click on No Thanks button
+        bundles.NoThanks().eq(1).click()
+
+        // Click on 'Next Step'
+        bundles.NextStep().eq(1).click()     
 
         // Add to Cart from Bundles
         bundles.AddToCart().click()
