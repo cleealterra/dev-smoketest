@@ -62,7 +62,7 @@ describe('Filters', () => {
 
         // click on > to go to the next month
         // cy.get('.datepicker__next').eq(1).click()
-        filters.NextMonthArrow().eq(0).click()
+        // filters.NextMonthArrow().eq(0).click()
         filters.NextMonthArrow().eq(0).click()
         filters.NextMonthArrow().eq(0).click()
 
