@@ -65,7 +65,7 @@ describe('Products filters', () => {
         // filters.NextMonthText().eq(0).should('include.text', NextMonthText)
 
         // click three times
-        filters.NextMonthArrow().eq(1).click()
+        // filters.NextMonthArrow().eq(1).click()
         filters.NextMonthArrow().eq(1).click()
 	
         // Verify September has been chosen
