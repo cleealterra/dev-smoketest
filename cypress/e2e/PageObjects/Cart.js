@@ -104,6 +104,10 @@ class Cart {
         return cy.get('.page-header')
     }    
 
+    ProductPrice() {
+        return cy.get('.product-price')
+    }
+
 }
 
 export default Cart

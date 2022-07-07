@@ -43,6 +43,10 @@ class Products {
         cy.visit('https://tremblant-sc10-dev.alterramtnco.dev/plan/products#filters=start-date:2022-8-9')
     }
 
+    FRActivityDatedFrCa() {
+        cy.visit('https://tremblant-sc10-dev.alterramtnco.dev/planifiez/products?sc_lang=fr-CA#filters=start-date:2022-8-9')
+    }
+
     sc10TrProdDated() {
         cy.visit('https://tremblant-sc10-uat-content.alterramtnco.dev/plan/rentals/UAT6#filters=start-date:2022-8-9')
     }    
