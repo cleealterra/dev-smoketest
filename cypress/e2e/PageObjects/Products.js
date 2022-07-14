@@ -43,6 +43,10 @@ class Products {
         cy.visit('https://tremblant-sc10-dev.alterramtnco.dev/plan/products#filters=start-date:2022-8-9')
     }
 
+    BBMRActivityDated() {
+        cy.visit('https://bigbearmountainresort-sc10-dev.alterramtnco.dev/plan-your-trip/products#filters=start-date:2022-11-9')
+    }
+
     FRActivityDatedFrCa() {
         cy.visit('https://tremblant-sc10-dev.alterramtnco.dev/planifiez/products?sc_lang=fr-CA#filters=start-date:2022-8-9')
     }
@@ -55,12 +59,19 @@ class Products {
         cy.visit('https://tremblant-sc10-dev.alterramtnco.dev/plan/products')
     }
 
+    BBMRActivityNoDate() {
+        cy.visit('https://bigbearmountainresort-sc10-dev.alterramtnco.dev/plan-your-trip/products')
+    }
+    
     DevTrProductsDetailsDated() {
         cy.visit('https://tremblant-dev.alterramtnco.dev/plan/products/adult-ski-lessons#filters=start-date:2022-8-09')
     }
 
     TRActivityDetailDated() {
         cy.visit('https://tremblant-sc10-dev.alterramtnco.dev/plan/products/adult-ski-lessons#filters=start-date:2022-8-9')
+    }
+    BBMRActivityDetailDated() {
+        cy.visit('https://bigbearmountainresort-sc10-dev.alterramtnco.dev/plan-your-trip/products/adult-ski-lessons#filters=start-date:2022-11-9')
     }
 
     DevDatedPage() {

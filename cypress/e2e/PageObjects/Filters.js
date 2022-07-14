@@ -56,6 +56,10 @@ class Filters {
         return cy.get('button[data-day="1663567200000"]')
     }
 
+    DecCheckOut() {
+        return cy.get('button[data-day="1671433200000"]')
+    }
+
     May22() {
         return cy.get('button[data-day="1653199200000"]')
     }
