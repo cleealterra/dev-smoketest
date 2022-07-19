@@ -179,7 +179,7 @@ describe('Filters', () => {
         filters.MoreFilters().click()        
 
         //** I can move the slider, but can't update the result
-        for(let n = 0; n < 15; n ++) {
+        for(let n = 0; n < 115; n ++) {
             cy.get('.slider.max').eq(1).type('{leftarrow}').trigger('change')
             //filters.Plus().eq(1).click()
             // cy.get('.handle').eq(3).click()
@@ -270,7 +270,7 @@ describe('Filters', () => {
         filters.MoreFilters().click()        
 
         //** I can move the slider, but can't update the result
-        for(let n = 0; n < 15; n ++) {
+        for(let n = 0; n < 115; n ++) {
             cy.get('.slider.max').eq(1).type('{leftarrow}').trigger('change')
             //filters.Plus().eq(1).click()
             // cy.get('.handle').eq(3).click()

@@ -152,7 +152,7 @@ describe('Filters', () => {
         filters.Widget().contains('Price per night:').click()
 
         //** I can move the slider, but can't update the result
-        for(let n = 0; n < 15; n ++) {
+        for(let n = 0; n < 115; n ++) {
             cy.get('.slider.max').eq(0).type('{leftarrow}').trigger('change')
             //filters.Plus().eq(1).click()
             // cy.get('.handle').eq(3).click()
